@@ -8,7 +8,6 @@ exports.run = async (request, response) => {
 	
 	var found = await defaults.getUser(request.body.email, request.body.pw)
 
-	console.log(found);
 	if (found.email) {
 		response.status(200).json({ status: true, msg: "User's account information is valid." })
 		return; 

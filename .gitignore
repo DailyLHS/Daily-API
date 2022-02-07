@@ -1,0 +1,5 @@
+*.json
+google-auth.json
+.json
+
+node_modules
