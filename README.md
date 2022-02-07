@@ -23,15 +23,15 @@ This endpoint checks whether the user's account information is valid or not.
 - Parameters:
 ```json
 {
-	email: "Your Daily email",
-	pw: "Your Daily password, as plaintext"
+	"email": "Your Daily email",
+	"pw": "Your Daily password, as plaintext"
 }
 ```
 - Successful Response:
 ```json
 {
-	status: true,
-	msg: "User's account information is valid."
+	"status": true,
+	"msg": "User's account information is valid."
 }
 ```
 
@@ -53,16 +53,16 @@ Returns your user information. Some fields will be omitted unless you have the m
 - Parameters:
 ```json
 {
-	email: "Your Daily email",
-	pw: "Your Daily password, as plaintext"
+	"email": "Your Daily email",
+	"pw": "Your Daily password, as plaintext"
 }
 ```
 - Successful Response:
 ```json
 { 
-	status: true, 
-	msg: "User data has been located and returned.", 
-	data: { 
+	"status": true, 
+	"msg": "User data has been located and returned.", 
+	"data": { 
 		//json of User Data 
 	}
 }
@@ -76,15 +76,15 @@ This endpoint will return an unparsed list of blocks happening in a current day.
 - Parameters:
 ```json
 {
-	date: "Not required. If omitted, current time will be used. Enter an ISO string for a certain day."
+	"date": "Not required. If omitted, current time will be used. Enter an ISO string for a certain day."
 }
 ```
 - Successful response:
 ```json
 { 
-	status:true, 
-	msg:"Obtained recent calendar information.",
-	data: [
+	"status": true, 
+	"msg": "Obtained recent calendar information.",
+	"data": [
 		// Array of calendar info.
 	]
 }
@@ -98,22 +98,22 @@ This endpoint will return an parsed list of blocks, along with the current day n
 - Parameters:
 ```json
 {
-	date: "Not required. If omitted, current time will be used. Enter an ISO string for a certain day."
+	"date": "Not required. If omitted, current time will be used. Enter an ISO string for a certain day."
 }
 ```
 - Successful response:
 ```json
 { 
-	status: true,
-	msg: "Obtained recent calendar information, and parsed it.",
-	todayJsons: [
+	"status": true,
+	"msg": "Obtained recent calendar information, and parsed it.",
+	"todayJsons": [
 		// Array of JSONs for each block.
 	],
-	todayDay: // A number corresponding to the day, 
-	todayText: [
+	"todayDay": // A number corresponding to the day, 
+	"todayText": [
 		// Array of strings for each block's name.
 	], 
-	otherInfo: [
+	"otherInfo": [
 		// An array of strings signifying alternate info about the day.
 	]}
 ```
