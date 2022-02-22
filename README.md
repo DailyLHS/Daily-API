@@ -1,17 +1,17 @@
-# Welcome to theorize.world API
+# Welcome to the Daily App API
 
-The following public API is made for projects under the perview of [theorize.world](https://theorize.world). Most projects will have a Public API associated with them. 
+Some quick notes:
 
-- The base URL of the api is [api.theorize.world](https://api.theorize.world). All endpoints go afterwards.
+- The base URL of the API is [api.theorize.world](https://api.theorize.world). All endpoints go afterwards.
 - You should have the generic headers for your requests. Ensure to set `Content-Type` to `application/json`.
--  Most endpoints will only require the use of `body` data in the form of a stringified JSON.
+- Most endpoints will only require the use of `body` data in the form of a stringified JSON.
 - Successful responses have a `200` status and a response key of `status: true`. Failed ones will have a response key of `status: false`.
 
 ### Are there any issues?
 
 If you find something that is not working as it should, or you need help using the API, shoot me an email at [ali@mosallaei.com](mailto:ali@mosallaei.com).
 
-## Daily
+## Endpoint Info
 
 To use most endpoints of this API, you need an account on [Daily](https://daily.mynt.pw/).
 
